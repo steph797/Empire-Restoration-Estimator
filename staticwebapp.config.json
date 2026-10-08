@@ -1,0 +1,29 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/icons/*",
+      "/*.png",
+      "/*.webmanifest",
+      "/*.js",
+      "/*.css",
+      "/*.json"
+    ]
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), geolocation=(), microphone=(self)",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://login.microsoftonline.com https://graph.microsoft.com; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  },
+  "mimeTypes": {
+    ".webmanifest": "application/manifest+json",
+    ".ertjob": "application/json"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 200
+    }
+  }
+}

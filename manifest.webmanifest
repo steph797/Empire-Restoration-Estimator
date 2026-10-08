@@ -1,0 +1,16 @@
+{
+  "name": "Empire Restoration Estimator",
+  "short_name": "Empire Estimator",
+  "description": "Field estimating, QuickBooks scope generation, job files, and benchmark history for Empire Restoration.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#07111f",
+  "orientation": "any",
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
